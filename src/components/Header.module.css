@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    height: 74px;
+    background-color: #0C70F2;
+    align-items: flex-end;
+}
+
+.header p:first-child{
+    margin-left: 10%;
+    background-color: #0C70F2;
+    color: #2D2D2D;
+    padding-left: 0;
+}
+
+.header p{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 7px 20px;
+}
+
+.header p:nth-child(2){
+    background-color: #2D2D2D;
+    color: #0C70F2;
+    border-radius: 10px 10px 0px 0px;
+}
