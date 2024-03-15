@@ -1,0 +1,45 @@
+.form div{
+    display: flex;
+    margin: auto;
+
+    width: 645px;
+    margin-top: 30px;
+    
+}
+
+.form div input{
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+
+    padding: 15px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 7px 0px 0px 7px;
+    box-shadow: 0px 0px 9px 0px #ffffff67;
+
+}
+
+.form div input::placeholder{
+    font-style: italic;
+}
+
+.form div input:focus{
+    outline: none;
+}
+
+.form div button{
+    font-size: 30px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+    background-color: #0C70F2;
+    color: #f5f5f5;
+    box-shadow: 3px 0px 9px 0px #3587f369;
+}
+
+.form div button:hover{
+    cursor: pointer;
+    background-color: #3588f3;
+    transition: all 0.2s ease-in-out;
+}

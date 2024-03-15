@@ -1,0 +1,46 @@
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.task:last-child{
+    padding-bottom: 0;
+}
+
+.taskCheck{
+    background-color: #fff;
+}
+
+.taskCheck label{
+    background-color: #fff;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #18181B;
+}
+
+.taskCheck input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0C70F2;
+    cursor: pointer;
+  }
+
+.taskGroup{
+    background-color: #fff;
+}
+
+.taskGroup button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.taskGroup button img{
+    background-color: #fff;
+}
