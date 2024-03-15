@@ -3,7 +3,7 @@ import styles from './TaskItem.module.css'
 import pencilIcon from '../assets/icons/pencil.svg'
 import trashIcon from '../assets/icons/trash.svg'
 
-const TaskItem = ({task}) => {
+const TaskItem = ({task, deleteTask}) => {
     const [isChecked, setIsChecked] = useState(task.checked)
 
     const handleCheckboxChange = (e) => {
@@ -25,7 +25,7 @@ const TaskItem = ({task}) => {
                 {task.name}
             </label>
         </div>
-        
+
         <div className={styles.taskGroup}>
             <button
             arial-label={`Update ${task.name} Task`}
@@ -36,7 +36,7 @@ const TaskItem = ({task}) => {
 
             <button
             arial-label={`Delete ${task.name} Task`}
-            //onClick={}
+            onClick={() => deleteTask(task.id)}
             >
                 <img src={trashIcon} alt="error" />
             </button>

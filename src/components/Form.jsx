@@ -28,7 +28,7 @@ export const Form = ({addTask}) => {
             onInput={(e) => setTask(e.target.value)}
             required
             autoFocus
-            maxLength={40}
+            maxLength={38}
             placeholder='Nova tarefa...' />
             <button
             aria-label='Add Task'

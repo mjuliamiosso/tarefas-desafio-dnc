@@ -6,6 +6,10 @@
     padding-bottom: 20px;
 }
 
+.task:last-child{
+    padding-bottom: 0;
+}
+
 .taskCheck{
     background-color: #fff;
 }
@@ -16,6 +20,7 @@
     font-family: "Raleway", sans-serif;
     padding-left: 20px;
     cursor: pointer;
+    color: #18181B;
 }
 
 .taskCheck input[type="checkbox"] {
@@ -33,6 +38,7 @@
     background-color: #fff;
     border: none;
     cursor: pointer;
+    padding-left: 10px;
 }
 
 .taskGroup button img{

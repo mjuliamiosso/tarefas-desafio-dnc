@@ -10,11 +10,22 @@ function App() {
     setTasks(prevState => [... prevState, task])
   }
 
+  const deleteTask = (id) => {
+    setTasks(prevState => prevState.filter(t => t.id !== id))
+  }
+
   return (
     <>
       <Header></Header>
       <Form addTask={addTask}></Form>
-      {tasks && <TaskList tasks={tasks}></TaskList>}
+
+      {tasks && (
+      <TaskList 
+        tasks={tasks}
+        deleteTask={deleteTask}
+        >
+        </TaskList>
+        )}
     </>
   )
 }
