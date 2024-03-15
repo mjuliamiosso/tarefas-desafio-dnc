@@ -3,11 +3,12 @@ import styles from './TaskItem.module.css'
 import pencilIcon from '../assets/icons/pencil.svg'
 import trashIcon from '../assets/icons/trash.svg'
 
-const TaskItem = ({task, deleteTask}) => {
+const TaskItem = ({task, deleteTask, toggleTask, enterEditMode}) => {
     const [isChecked, setIsChecked] = useState(task.checked)
 
     const handleCheckboxChange = (e) => {
         setIsChecked(!isChecked)
+        toggleTask(task.id)
     }
 
   return (
@@ -29,7 +30,7 @@ const TaskItem = ({task, deleteTask}) => {
         <div className={styles.taskGroup}>
             <button
             arial-label={`Update ${task.name} Task`}
-            //onClick={}
+            onClick={() => enterEditMode(task)}
             >
                 <img src={pencilIcon} alt="error" />
             </button>

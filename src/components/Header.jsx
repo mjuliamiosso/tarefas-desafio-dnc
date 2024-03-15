@@ -2,10 +2,17 @@ import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <div className={styles.header}>
+      <header >
         <p>Organização</p>
         <p>Tarefas</p>
-    </header>
+      </header>
+      <h1>
+          Otimize seu tempo e se organize com o nosso<br></br>
+          <span>Planejador Diário!</span> 
+      </h1>
+    </div>
+    
   )
 }
 

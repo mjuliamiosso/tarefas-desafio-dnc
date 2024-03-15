@@ -16,11 +16,6 @@ export const Form = ({addTask}) => {
 
   return (
     <form className={styles.form} onSubmit={handleFormSubmit}>
-        <h1>
-            Otimize seu tempo e se organize com o nosso<br></br>
-            <span>Planejador Diário!</span> 
-        </h1>
-
         <div>
             <input type="text" 
             id='task' 
