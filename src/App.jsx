@@ -30,7 +30,7 @@ function App() {
 
   const closeEditMode = () => {
     setIsEditing(false)
-    
+
   }
 
   const enterEditMode = (task) => {
@@ -42,17 +42,17 @@ function App() {
   return (
     <>
       <Header></Header>
+      <Form addTask={addTask}></Form>
       {
         isEditing && (
           <EditForm 
         editedTask={editedTask}
         updateTask={updateTask}
-      />
+        />
         )
-        }
-      <Form addTask={addTask}></Form>
+      }
       {tasks && (
-      <TaskList 
+        <TaskList 
         tasks={tasks}
         deleteTask={deleteTask}
         toggleTask={toggleTask}
