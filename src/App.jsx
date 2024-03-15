@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Form from './components/Form'
+import TaskList from './components/TaskList'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tasks, setTasks] = useState([])
+
+  const addTask = (task) => {
+    setTasks(prevState => [... prevState, task])
+  }
 
   return (
     <>
       <Header></Header>
-      <Form></Form>
+      <Form addTask={addTask}></Form>
+      {tasks && <TaskList tasks={tasks}></TaskList>}
     </>
   )
 }
